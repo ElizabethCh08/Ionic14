@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-app>
+    <ion-content fullscreen>
+      <ion-card *ngFor="let p of pastel">
+        <img [src]="p.imagen" />
+        <ion-card-header>
+          <ion-card-subtitle>Dettale del Pastel</ion-card-subtitle>
+          <ion-card-title>{{p.nombre}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>Precio: ${{p.precio}}</ion-card-content>
+        <ion-card-content>Fecha elab: {{p.fecha}}</ion-card-content>
+        <ion-card-content>Proveedor: {{p.proveedor}}</ion-card-content>
+        <ion-card-content>Tamano: {{p.tamanio}}</ion-card-content>
+      </ion-card>
+    </ion-content>
+  </ion-app>
+
+</ion-content>
